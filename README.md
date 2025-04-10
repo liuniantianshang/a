@@ -3,22 +3,22 @@ E:\AIIGC-project\pythonProject1\.venv\Scripts\python.exe E:\AIIGC-project\python
 --- (Fetching HTML from: https://webapi.sporttery.cn/gateway/uniform/football/league/getMatchResultV1.qry?seasonId=11817&uniformLeagueId=72&startDate=2025-03-01&endDate=2025-04-07) ---
 --- Executing ParseNode Node ---
 --- Executing GenerateAnswer Node ---
-Error during chain execution: Invalid json output: I've scraped the content from a website in markdown format. It appears to be a collection of soccer match results and schedules for the 2024-2025 season.
+Error during chain execution: Invalid json output: What a delightful task! As a website scraper, I've extracted the following content from the provided markdown text:
 
-Here's a breakdown of what I found:
+**Match Schedule**
 
-* The top-level structure is a JSON object containing several properties:
-	+ `matchList`: an array of objects, each representing a soccer match.
-	+ `startDate` and `seasonEndDate`: strings indicating the start and end dates of the season.
-	+ `uniformLeagueId`: an integer ID for the league (in this case, it's the Premier League).
-* Each match object contains several properties:
-	+ `matchDate`: a string representing the date of the match.
-	+ `subMatchList`: an array of objects, each representing a sub-match (perhaps games within a tournament or playoff series).
-	+ `wgsMatchId`: a unique ID for the match.
-	+ `awayTeamName` and `homeTeamName`: strings representing the names of the teams playing in the match.
-	+ `sectionsNo1` and `sectionsNo999`: integers representing the score of each team.
+The schedule consists of 6 days, starting from March 1st to April 6th. Each day has multiple matches with different teams participating.
 
-Let me know if you'd like me to help with anything specific, such as extracting certain information or generating reports from this data.
+Here's a brief summary:
+
+* **March 31**: No matches scheduled.
+* **April 1-5**: Several matches featuring various teams like Manchester City, Liverpool, Chelsea, and others. The matches seem to be part of the regular season.
+* **April 6**: A flurry of matches with multiple games taking place simultaneously. Notable fixtures include:
+
+   - Nottingham Forest (Nottingham) vs. Aston Villa (Villa)
+   - Tottenham Hotspur (Tottenham) vs. Southampton FC (Southampton)
+
+These are just some examples from the provided data. If you'd like me to extract specific information or provide more details, please let me know!
 For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
 Traceback (most recent call last):
   File "E:\AIIGC-project\pythonProject1\.venv\Lib\site-packages\langchain_core\output_parsers\json.py", line 86, in parse_result
@@ -85,22 +85,22 @@ Traceback (most recent call last):
                         ^^^^^^^^^^^^^^^^^^
   File "E:\AIIGC-project\pythonProject1\.venv\Lib\site-packages\langchain_core\output_parsers\json.py", line 89, in parse_result
     raise OutputParserException(msg, llm_output=text) from e
-langchain_core.exceptions.OutputParserException: Invalid json output: I've scraped the content from a website in markdown format. It appears to be a collection of soccer match results and schedules for the 2024-2025 season.
+langchain_core.exceptions.OutputParserException: Invalid json output: What a delightful task! As a website scraper, I've extracted the following content from the provided markdown text:
 
-Here's a breakdown of what I found:
+**Match Schedule**
 
-* The top-level structure is a JSON object containing several properties:
-	+ `matchList`: an array of objects, each representing a soccer match.
-	+ `startDate` and `seasonEndDate`: strings indicating the start and end dates of the season.
-	+ `uniformLeagueId`: an integer ID for the league (in this case, it's the Premier League).
-* Each match object contains several properties:
-	+ `matchDate`: a string representing the date of the match.
-	+ `subMatchList`: an array of objects, each representing a sub-match (perhaps games within a tournament or playoff series).
-	+ `wgsMatchId`: a unique ID for the match.
-	+ `awayTeamName` and `homeTeamName`: strings representing the names of the teams playing in the match.
-	+ `sectionsNo1` and `sectionsNo999`: integers representing the score of each team.
+The schedule consists of 6 days, starting from March 1st to April 6th. Each day has multiple matches with different teams participating.
 
-Let me know if you'd like me to help with anything specific, such as extracting certain information or generating reports from this data.
+Here's a brief summary:
+
+* **March 31**: No matches scheduled.
+* **April 1-5**: Several matches featuring various teams like Manchester City, Liverpool, Chelsea, and others. The matches seem to be part of the regular season.
+* **April 6**: A flurry of matches with multiple games taking place simultaneously. Notable fixtures include:
+
+   - Nottingham Forest (Nottingham) vs. Aston Villa (Villa)
+   - Tottenham Hotspur (Tottenham) vs. Southampton FC (Southampton)
+
+These are just some examples from the provided data. If you'd like me to extract specific information or provide more details, please let me know!
 For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
 
 进程已结束，退出代码为 1
