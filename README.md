@@ -3,22 +3,28 @@ E:\AIIGC-project\pythonProject1\.venv\Scripts\python.exe E:\AIIGC-project\python
 --- (Fetching HTML from: https://webapi.sporttery.cn/gateway/uniform/football/league/getMatchResultV1.qry?seasonId=11817&uniformLeagueId=72&startDate=2025-03-01&endDate=2025-04-07) ---
 --- Executing ParseNode Node ---
 --- Executing GenerateAnswer Node ---
-Error during chain execution: Invalid json output: What a delightful task! As a website scraper, I've extracted the following content from the provided markdown text:
+Error during chain execution: Invalid json output: You've got a nice chunk of JSON data in Markdown format!
 
-**Match Schedule**
+Let's extract some useful information from this data. I'll assume you're interested in extracting match dates, teams, and scores.
 
-The schedule consists of 6 days, starting from March 1st to April 6th. Each day has multiple matches with different teams participating.
+Here are the matches scraped:
 
-Here's a brief summary:
+1. **Match Date**: 2025-03-01
+	* **Team A**: Not specified
+	* **Team B**: Not specified
+	* **Score**: Not specified
+2. ... (many more matches)
+3. **Match Date**: 2025-04-06
+	* **Manchester City** vs. **Manchester United**
+		+ Score: 0-0
 
-* **March 31**: No matches scheduled.
-* **April 1-5**: Several matches featuring various teams like Manchester City, Liverpool, Chelsea, and others. The matches seem to be part of the regular season.
-* **April 6**: A flurry of matches with multiple games taking place simultaneously. Notable fixtures include:
+Some key observations:
 
-   - Nottingham Forest (Nottingham) vs. Aston Villa (Villa)
-   - Tottenham Hotspur (Tottenham) vs. Southampton FC (Southampton)
+* The data contains multiple match dates, but each date has only one match listed.
+* The teams are not consistently formatted (e.g., "Manchester City" vs. "Manchester United").
+* The scores are available for some matches, but not all.
 
-These are just some examples from the provided data. If you'd like me to extract specific information or provide more details, please let me know!
+If you'd like me to extract specific information or perform further analysis, feel free to ask!
 For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
 Traceback (most recent call last):
   File "E:\AIIGC-project\pythonProject1\.venv\Lib\site-packages\langchain_core\output_parsers\json.py", line 86, in parse_result
@@ -85,22 +91,28 @@ Traceback (most recent call last):
                         ^^^^^^^^^^^^^^^^^^
   File "E:\AIIGC-project\pythonProject1\.venv\Lib\site-packages\langchain_core\output_parsers\json.py", line 89, in parse_result
     raise OutputParserException(msg, llm_output=text) from e
-langchain_core.exceptions.OutputParserException: Invalid json output: What a delightful task! As a website scraper, I've extracted the following content from the provided markdown text:
+langchain_core.exceptions.OutputParserException: Invalid json output: You've got a nice chunk of JSON data in Markdown format!
 
-**Match Schedule**
+Let's extract some useful information from this data. I'll assume you're interested in extracting match dates, teams, and scores.
 
-The schedule consists of 6 days, starting from March 1st to April 6th. Each day has multiple matches with different teams participating.
+Here are the matches scraped:
 
-Here's a brief summary:
+1. **Match Date**: 2025-03-01
+	* **Team A**: Not specified
+	* **Team B**: Not specified
+	* **Score**: Not specified
+2. ... (many more matches)
+3. **Match Date**: 2025-04-06
+	* **Manchester City** vs. **Manchester United**
+		+ Score: 0-0
 
-* **March 31**: No matches scheduled.
-* **April 1-5**: Several matches featuring various teams like Manchester City, Liverpool, Chelsea, and others. The matches seem to be part of the regular season.
-* **April 6**: A flurry of matches with multiple games taking place simultaneously. Notable fixtures include:
+Some key observations:
 
-   - Nottingham Forest (Nottingham) vs. Aston Villa (Villa)
-   - Tottenham Hotspur (Tottenham) vs. Southampton FC (Southampton)
+* The data contains multiple match dates, but each date has only one match listed.
+* The teams are not consistently formatted (e.g., "Manchester City" vs. "Manchester United").
+* The scores are available for some matches, but not all.
 
-These are just some examples from the provided data. If you'd like me to extract specific information or provide more details, please let me know!
+If you'd like me to extract specific information or perform further analysis, feel free to ask!
 For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
 
 进程已结束，退出代码为 1
