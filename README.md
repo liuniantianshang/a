@@ -1,65 +1,24 @@
 E:\AIIGC-project\pythonProject1\.venv\Scripts\python.exe E:\AIIGC-project\pythonProject1\cs4.py 
 --- Executing Fetch Node ---
---- (Fetching HTML from: https://scrapegraphai.com/) ---
+--- (Fetching HTML from: https://webapi.sporttery.cn/gateway/uniform/football/league/getMatchResultV1.qry?seasonId=11817&uniformLeagueId=72&startDate=2025-03-01&endDate=2025-04-07) ---
 --- Executing ParseNode Node ---
 --- Executing GenerateAnswer Node ---
-Error during chain execution: Invalid json output: I've scraped the following content from a website in markdown format:
+Error during chain execution: Invalid json output: I've scraped the content from a website in markdown format. It appears to be a collection of soccer match results and schedules for the 2024-2025 season.
 
-**What is ScrapeGraphAI and how does it work?**
+Here's a breakdown of what I found:
 
-ScrapeGraphAI is a cutting-edge web scraping tool that leverages Large Language Models (LLMs) to simplify the data extraction process. It's designed for AI agents and developers who want to collect structured data without writing complex code.
+* The top-level structure is a JSON object containing several properties:
+	+ `matchList`: an array of objects, each representing a soccer match.
+	+ `startDate` and `seasonEndDate`: strings indicating the start and end dates of the season.
+	+ `uniformLeagueId`: an integer ID for the league (in this case, it's the Premier League).
+* Each match object contains several properties:
+	+ `matchDate`: a string representing the date of the match.
+	+ `subMatchList`: an array of objects, each representing a sub-match (perhaps games within a tournament or playoff series).
+	+ `wgsMatchId`: a unique ID for the match.
+	+ `awayTeamName` and `homeTeamName`: strings representing the names of the teams playing in the match.
+	+ `sectionsNo1` and `sectionsNo999`: integers representing the score of each team.
 
-**How easy is it to integrate ScrapeGraphAI with Python, JavaScript, or TypeScript?**
-
-ScrapeGraphAI provides APIs for Python, JavaScript, and TypeScript, making it easy to integrate into your existing projects. Our documentation and sample code make it simple to get started.
-
-**What makes ScrapeGraphAI perfect for AI agents?**
-
-ScrapeGraphAI's AI-driven API allows AI agents to focus on higher-level tasks while the tool handles the complex web scraping process. Our solution is optimized for performance, reliability, and scalability.
-
-**What types of websites and data can ScrapeGraphAI handle?**
-
-ScrapeGraphAI can scrape a wide range of website types, including static HTML, dynamic JavaScript, and even websites with heavy JavaScript usage. We support various data formats, such as JSON, CSV, and XML.
-
-**How does ScrapeGraphAI handle website changes and maintenance?**
-
-Our solution continuously monitors website changes and automatically updates our scraper to ensure seamless data extraction. This means you can focus on your projects while we handle the tedious task of website maintenance.
-
-**What about performance, reliability, and scalability?**
-
-ScrapeGraphAI is designed for high-performance scraping, with built-in features like parallel processing, caching, and load balancing. Our solution ensures reliable data extraction, even in complex situations.
-
-**How does pricing work and what's included?**
-
-Our pricing model is based on the amount of data you collect. We offer a free plan, as well as several paid plans to suit your needs. All plans include access to our AI-driven API, support, and documentation.
-
-**Ready to Collect Data in the Easiest Way Ever?**
-
-Start scraping websites with ScrapeGraphAI's powerful AI-driven API. Get structured data without the hassle of writing complex code.
-
-[Get Started](https://dashboard.scrapegraphai.com/)
-
-**Meet Our Founders**
-
-The team behind ScrapeGraphAI's innovation
-
-### Marco Vinciguerra
-
-Founder & Software Engineer
-
-[LinkedIn profile of Marco Vinciguerra](https://www.linkedin.com/in/marco-vinciguerra-7ba365242/)
-
-### Lorenzo Padoan
-
-Founder & CEO
-
-[LinkedIn profile of Lorenzo Padoan](https://www.linkedin.com/in/lorenzo-padoan-4521a2154/)
-
-**Stay Updated**
-
-Subscribe to our newsletter for the latest updates, feature releases, and community news.
-
-Subscribe
+Let me know if you'd like me to help with anything specific, such as extracting certain information or generating reports from this data.
 For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
 Traceback (most recent call last):
   File "E:\AIIGC-project\pythonProject1\.venv\Lib\site-packages\langchain_core\output_parsers\json.py", line 86, in parse_result
@@ -87,7 +46,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "E:\AIIGC-project\pythonProject1\cs4.py", line 21, in <module>
+  File "E:\AIIGC-project\pythonProject1\cs4.py", line 22, in <module>
     result = smart_scraper_graph.run()
              ^^^^^^^^^^^^^^^^^^^^^^^^^
   File "E:\AIIGC-project\pythonProject1\.venv\Lib\site-packages\scrapegraphai\graphs\smart_scraper_graph.py", line 296, in run
@@ -126,61 +85,22 @@ Traceback (most recent call last):
                         ^^^^^^^^^^^^^^^^^^
   File "E:\AIIGC-project\pythonProject1\.venv\Lib\site-packages\langchain_core\output_parsers\json.py", line 89, in parse_result
     raise OutputParserException(msg, llm_output=text) from e
-langchain_core.exceptions.OutputParserException: Invalid json output: I've scraped the following content from a website in markdown format:
+langchain_core.exceptions.OutputParserException: Invalid json output: I've scraped the content from a website in markdown format. It appears to be a collection of soccer match results and schedules for the 2024-2025 season.
 
-**What is ScrapeGraphAI and how does it work?**
+Here's a breakdown of what I found:
 
-ScrapeGraphAI is a cutting-edge web scraping tool that leverages Large Language Models (LLMs) to simplify the data extraction process. It's designed for AI agents and developers who want to collect structured data without writing complex code.
+* The top-level structure is a JSON object containing several properties:
+	+ `matchList`: an array of objects, each representing a soccer match.
+	+ `startDate` and `seasonEndDate`: strings indicating the start and end dates of the season.
+	+ `uniformLeagueId`: an integer ID for the league (in this case, it's the Premier League).
+* Each match object contains several properties:
+	+ `matchDate`: a string representing the date of the match.
+	+ `subMatchList`: an array of objects, each representing a sub-match (perhaps games within a tournament or playoff series).
+	+ `wgsMatchId`: a unique ID for the match.
+	+ `awayTeamName` and `homeTeamName`: strings representing the names of the teams playing in the match.
+	+ `sectionsNo1` and `sectionsNo999`: integers representing the score of each team.
 
-**How easy is it to integrate ScrapeGraphAI with Python, JavaScript, or TypeScript?**
-
-ScrapeGraphAI provides APIs for Python, JavaScript, and TypeScript, making it easy to integrate into your existing projects. Our documentation and sample code make it simple to get started.
-
-**What makes ScrapeGraphAI perfect for AI agents?**
-
-ScrapeGraphAI's AI-driven API allows AI agents to focus on higher-level tasks while the tool handles the complex web scraping process. Our solution is optimized for performance, reliability, and scalability.
-
-**What types of websites and data can ScrapeGraphAI handle?**
-
-ScrapeGraphAI can scrape a wide range of website types, including static HTML, dynamic JavaScript, and even websites with heavy JavaScript usage. We support various data formats, such as JSON, CSV, and XML.
-
-**How does ScrapeGraphAI handle website changes and maintenance?**
-
-Our solution continuously monitors website changes and automatically updates our scraper to ensure seamless data extraction. This means you can focus on your projects while we handle the tedious task of website maintenance.
-
-**What about performance, reliability, and scalability?**
-
-ScrapeGraphAI is designed for high-performance scraping, with built-in features like parallel processing, caching, and load balancing. Our solution ensures reliable data extraction, even in complex situations.
-
-**How does pricing work and what's included?**
-
-Our pricing model is based on the amount of data you collect. We offer a free plan, as well as several paid plans to suit your needs. All plans include access to our AI-driven API, support, and documentation.
-
-**Ready to Collect Data in the Easiest Way Ever?**
-
-Start scraping websites with ScrapeGraphAI's powerful AI-driven API. Get structured data without the hassle of writing complex code.
-
-[Get Started](https://dashboard.scrapegraphai.com/)
-
-**Meet Our Founders**
-
-The team behind ScrapeGraphAI's innovation
-
-### Marco Vinciguerra
-
-Founder & Software Engineer
-
-[LinkedIn profile of Marco Vinciguerra](https://www.linkedin.com/in/marco-vinciguerra-7ba365242/)
-
-### Lorenzo Padoan
-
-Founder & CEO
-
-[LinkedIn profile of Lorenzo Padoan](https://www.linkedin.com/in/lorenzo-padoan-4521a2154/)
-
-**Stay Updated**
-
-Subscribe to our newsletter for the latest updates, feature releases, and community news.
-
-Subscribe
+Let me know if you'd like me to help with anything specific, such as extracting certain information or generating reports from this data.
 For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+进程已结束，退出代码为 1
